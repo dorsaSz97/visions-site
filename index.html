@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Visions | Sacramento Music Festival</title>
+  </head>
+  <body>
+    <header class="header flex flex-ac text--dark">
+      <figure class="header__logo-box flex--c flex--c-ac-jc">
+        <img
+          class="header__logo"
+          src="img/logo.png"
+          alt="Visions logo with chrome text effect"
+        />
+        <figcaption class="caption">7-8 July 2022 · Sacramento, CA</figcaption>
+      </figure>
+
+      <nav class="header__navigation flex flex-ac">
+        <ul class="header__menu flex flex-ac">
+          <li><a href="#info">info</a></li>
+          <li><a href="#tickets">tickets</a></li>
+          <li><a href="#lineup">lineup</a></li>
+        </ul>
+        <ul class="header__socials flex flex-ac">
+          <li>
+            <a href="https://www.instagram.com" aria-label="instagram logo">
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.4969 7.36979C9.38527 7.36979 7.66201 9.0267 7.66201 11.057C7.66201 13.0874 9.38527 14.7443 11.4969 14.7443C13.6085 14.7443 15.3318 13.0874 15.3318 11.057C15.3318 9.0267 13.6085 7.36979 11.4969 7.36979ZM22.9987 11.057C22.9987 9.53013 23.0131 8.01706 22.9239 6.49293C22.8347 4.7226 22.4147 3.15144 21.0683 1.85689C19.7191 0.55958 18.0879 0.158492 16.2467 0.0727421C14.6586 -0.0130079 13.085 0.000822769 11.4998 0.000822769C9.91174 0.000822769 8.33808 -0.0130079 6.75292 0.0727421C4.91171 0.158492 3.27763 0.562347 1.93125 1.85689C0.581988 3.15421 0.164838 4.7226 0.0756548 6.49293C-0.0135288 8.01983 0.000855714 9.5329 0.000855714 11.057C0.000855714 12.5812 -0.0135288 14.097 0.0756548 15.6211C0.164838 17.3915 0.584864 18.9626 1.93125 20.2572C3.28051 21.5545 4.91171 21.9556 6.75292 22.0413C8.34096 22.1271 9.91462 22.1133 11.4998 22.1133C13.0878 22.1133 14.6615 22.1271 16.2467 22.0413C18.0879 21.9556 19.7219 21.5517 21.0683 20.2572C22.4176 18.9599 22.8347 17.3915 22.9239 15.6211C23.016 14.097 22.9987 12.5839 22.9987 11.057ZM11.4969 16.7304C8.23164 16.7304 5.59641 14.1966 5.59641 11.057C5.59641 7.91748 8.23164 5.38371 11.4969 5.38371C14.7622 5.38371 17.3974 7.91748 17.3974 11.057C17.3974 14.1966 14.7622 16.7304 11.4969 16.7304ZM17.6391 6.47633C16.8767 6.47633 16.261 5.88438 16.261 5.15135C16.261 4.41833 16.8767 3.82638 17.6391 3.82638C18.4014 3.82638 19.0171 4.41833 19.0171 5.15135C19.0173 5.32541 18.9818 5.49781 18.9127 5.65866C18.8435 5.81951 18.742 5.96566 18.614 6.08874C18.486 6.21182 18.334 6.30941 18.1667 6.37592C17.9994 6.44243 17.8201 6.47655 17.6391 6.47633Z"
+                  fill="#415D76"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" aria-label="facebook logo">
+              <svg
+                width="11"
+                height="23"
+                viewBox="0 0 11 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.37634 4.2835V7.3286H0V11.0504H2.37634V22.1141H7.26104V11.0504H10.5379C10.5379 11.0504 10.8468 9.2658 10.9953 7.31312H7.2799V4.77C7.2799 4.38743 7.81269 3.8766 8.34076 3.8766H11V0H7.38127C2.25611 0 2.37634 3.72622 2.37634 4.2835Z"
+                  fill="#415D76"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" aria-label="youtube logo">
+              <svg
+                width="30"
+                height="23"
+                viewBox="0 0 30 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.769 0H6.231C2.79 0 0 2.90725 0 6.49076V15.6233C0 19.21 2.79 22.1141 6.231 22.1141H23.769C27.21 22.1141 30 19.2068 30 15.6233V6.49076C30 2.90409 27.21 0 23.769 0ZM19.557 11.5026L11.352 15.5791C11.3018 15.6041 11.2464 15.6153 11.191 15.6118C11.1356 15.6082 11.0819 15.59 11.035 15.5588C10.988 15.5276 10.9493 15.4845 10.9224 15.4333C10.8955 15.3822 10.8812 15.3247 10.881 15.2662V6.86048C10.8815 6.80125 10.8964 6.74314 10.9242 6.69166C10.952 6.64017 10.9918 6.59703 11.0399 6.56632C11.088 6.53562 11.1427 6.51836 11.1989 6.5162C11.2551 6.51403 11.3109 6.52703 11.361 6.55396L19.563 10.8832C19.6169 10.9129 19.662 10.9577 19.6933 11.0127C19.7245 11.0677 19.7408 11.1308 19.7401 11.1949C19.7395 11.259 19.7221 11.3216 19.6898 11.3759C19.6574 11.4302 19.6115 11.4741 19.557 11.5026Z"
+                  fill="#415D76"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" aria-label="twitter logo">
+              <svg
+                width="26"
+                height="23"
+                viewBox="0 0 26 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26 2.61778C25.0432 3.06006 24.0162 3.36413 22.9372 3.49681C24.0396 2.80575 24.882 1.7111 25.2824 0.409137C24.2319 1.06003 23.0857 1.51794 21.892 1.76362C21.3899 1.20406 20.7858 0.759113 20.1166 0.455904C19.4475 0.152694 18.7272 -0.00241741 17.9998 2.84816e-05C15.054 2.84816e-05 12.6672 2.50168 12.6672 5.58382C12.6672 6.02057 12.714 6.44627 12.805 6.85538C10.692 6.7487 8.62321 6.17494 6.73048 5.17069C4.83776 4.16645 3.16271 2.75377 1.8122 1.0228C1.33786 1.87171 1.08813 2.84112 1.0894 3.82852C1.0894 5.7635 2.0332 7.47733 3.4632 8.47523C2.61676 8.44701 1.78844 8.20743 1.0452 7.77587V7.84498C1.05323 9.14269 1.48408 10.3973 2.26438 11.3953C3.04469 12.3932 4.12621 13.0727 5.3248 13.3182C4.53793 13.5394 3.7146 13.5715 2.9146 13.4122C3.26333 14.5286 3.93035 15.5018 4.82306 16.1968C5.71577 16.8918 6.78986 17.274 7.8962 17.2904C5.9981 18.8455 3.66766 19.6856 1.2714 19.6788C0.8424 19.6788 0.4186 19.6511 0 19.6014C2.44523 21.2469 5.2805 22.1184 8.1744 22.1141C17.9868 22.1141 23.3506 13.6057 23.3506 6.22513L23.3324 5.50089C24.3784 4.71938 25.2822 3.74251 26 2.61778Z"
+                  fill="#415D76"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg">&nbsp;</div>
+        <div class="hero__inner flex flex-ac">
+          <div class="hero__text-box flex--c">
+            <h1 class="heading-primary">
+              When words leave off,<br />
+              music begins.
+            </h1>
+            <div>
+              <a href="#" class="btn">Buy tickets</a>
+            </div>
+          </div>
+
+          <div class="hero__image-box">
+            <div class="images">
+              <div>
+                <img src="img/star1.svg" alt="" />
+                <figure>
+                  <img
+                    class="image"
+                    src="img/hero-1.png"
+                    alt="People dancing at the festival"
+                  />
+                </figure>
+              </div>
+              <div>
+                <img src="img/star2.svg" alt="" />
+                <figure>
+                  <img
+                    src="img/hero-2.png"
+                    alt="Blue neon lights"
+                    class="image"
+                  />
+                </figure>
+              </div>
+              <div>
+                <img src="img/star3.svg" alt="" />
+                <figure>
+                  <img
+                    src="img/hero-3.png"
+                    alt="Crowd at the festival"
+                    class="image"
+                  />
+                </figure>
+              </div>
+              <div>
+                <img src="img/star4.svg" alt="" />
+                <figure>
+                  <img
+                    src="img/hero-4.png"
+                    alt="People dancing at the festival"
+                    class="image"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-info text--light">
+        <div class="section__inner container flex--c">
+          <div class="section__header">
+            <h2 class="heading-secondary">Let's get acquainted!</h2>
+          </div>
+
+          <div class="section__content">
+            <figure class="info__image-box">
+              <img
+                src="img/info.png"
+                alt="People at the festival with someone standing in front of them arms wideopen"
+              />
+            </figure>
+            <div class="info__text-box">
+              <p class="paragraph paragraph--sm">
+                Visions Festival is an annual music festival that takes place in
+                Sacramento, California.
+                <br />
+                <br />
+                Visions Festival is a unique mix of R&B, hip hop, electronic,
+                dream pop, juzz, and rock. <br />
+                <br />Visions Festival is 8 years of never-ending energy,
+                passion, positive vibes, freedom, diversity and most
+                importantly, live music! <br />
+                <br />With 5 stages, and 100+ artists from all over the world,
+                every Visions lineup makes hands clap, hearts beat, heads nod,
+                and crowds holler.
+                <br />
+                <br />
+                <br />
+                <br />
+                <strong>Are you ready to have your world rocked?</strong>
+              </p>
+            </div>
+            <figure class="info__logo">
+              <img src="img/logo-acco.png" alt="metal logo" />
+            </figure>
+            <div class="lines">
+              <figure>
+                <img src="img/line.png" alt="line" class="line--1" />
+              </figure>
+              <figure>
+                <img src="img/line.png" alt="line" class="line--2" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-countdown text--light">
+        <div class="section__inner container flex">
+          <div class="countdown flex">
+            <div>
+              <span class="number">178</span>
+              <span class="text">days</span>
+            </div>
+            <div>
+              <span class="number">17</span>
+              <span class="text">hours</span>
+            </div>
+            <div>
+              <span class="number">18</span>
+              <span class="text">minutes</span>
+            </div>
+            <div>
+              <span class="number">27</span>
+              <span class="text">seconds</span>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <img
+                src="img/logo-numbers.webp"
+                alt="Visions logo with chrome text effect"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tickets text--dark" id="tickets">
+        <div class="section__inner container flex--c">
+          <div class="section__header">
+            <h2 class="heading-secondary">Get your tickets now!</h2>
+          </div>
+
+          <div class="section__content text--light">
+            <ul class="tickets flex">
+              <li class="ticket">
+                <p class="ticket__title">1-day pass</p>
+
+                <p class="paragraph ticket__info">
+                  24 hours of unearthy experience!
+                </p>
+
+                <a href="#" class="btn">250$</a>
+              </li>
+
+              <li class="ticket">
+                <p class="ticket__title">2-day pass</p>
+
+                <p class="paragraph ticket__info">
+                  48 hours to celebrate The Party of The Year!
+                </p>
+
+                <a href="#" class="btn">450$</a>
+              </li>
+
+              <li class="ticket">
+                <p class="ticket__title">VIP upgrade</p>
+
+                <p class="paragraph ticket__info">
+                  Take the whole Festival to a higher level!
+                </p>
+
+                <a href="#" class="btn">+150$</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section__footer flex">
+            <div class="title">Early bird offer</div>
+
+            <div class="text flex--c">
+              <p class="paragraph paragraph--lg">
+                Get your passes before October 12th and save up to 20%
+              </p>
+              <a href="#" class="more">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-accomodation text-light">
+        <div class="bg-web">&nbsp;</div>
+        <div class="section__inner container flex">
+          <div class="section__header">
+            <h2 class="heading-secondary">Visions accommodation</h2>
+            <p class="paragraph paragraph--sm">
+              Take your Visions experience to a truly unearthy level! Book a
+              luxurious apartment near Avenue Park and enjoy prime views,
+              exclusive lounges, luxury indulgences and getaways from the crowd.
+            </p>
+            <p class="paragraph paragraph--sm">
+              Your oasis within the festival is waiting for you!
+            </p>
+
+            <a href="#" class="btn btn--cta">book now</a>
+          </div>
+          <div class="section__content flex-ac-jc">
+            <div class="accomodations flex--c">
+              <figure class="acco">
+                <img src="img/acco-1.png" alt="Buildings at nights" />
+              </figure>
+              <figure><img src="img/logo-acco.png" alt="" /></figure>
+              <figure class="acco">
+                <img src="img/acco-2.png" alt="A bridge at night" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-map text--dark">
+        <div class="section__inner container flex--c">
+          <div class="section__header">
+            <h2 class="heading-secondary">Visions map</h2>
+          </div>
+
+          <div class="section__content">
+            <figure>
+              <img src="img/map.webp" alt="Map of the music festival" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-playlist text--light">
+        <div class="section__inner container flex">
+          <div class="section__header">
+            <h2 class="heading-secondary">Official Visions playlist</h2>
+            <p class="paragraph paragraph--sm">
+              What’s a music festival without its own unique playlist! Start
+              tuning yourself to Summer 2022 and get into the festival vibe
+              right now!
+            </p>
+            <div class="lines">
+              <figure>
+                <img src="img/playlist-line.png" alt="line" class="line--1" />
+              </figure>
+              <figure>
+                <img src="img/playlist-line.png" alt="line" class="line--2" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="section__content">
+            <figure>
+              <img src="img/disc.png" alt="Image of a white CD" />
+            </figure>
+            <a href="#" class="btn">Play me!</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sponsors text--dark">
+        <div class="section__inner container flex--c flex--c-ac-jc">
+          <div class="section__header">
+            <h2 class="heading-secondary heading-secondary--dark">
+              Our sponsors and partners
+            </h2>
+          </div>
+          <div class="section__content">
+            <ul class="sponsors flex flex-jc">
+              <li class="sponsor">
+                <figure>
+                  <img
+                    src="img/sponsors/cocacola-logo.png"
+                    alt="Coca Cola logo"
+                  />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/redbull-logo.png" alt="RedBull logo" />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/bacardi-logo.png" alt="Bacardi logo" />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/paypal-logo.png" alt="Paypal logo" />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/hilton-logo.png" alt="Hilton logo" />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/grubhub-logo.png" alt="Grabhub logo" />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img
+                    src="img/sponsors/shakeshack-logo.png"
+                    alt="Shake shack logo"
+                  />
+                </figure>
+              </li>
+              <li class="sponsor">
+                <figure>
+                  <img src="img/sponsors/bmi-logo.png" alt="Bmi logo" />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text--light">
+      <div class="container flex">
+        <div class="footer__form flex--c">
+          <h2 class="heading-secondary">Subscribe</h2>
+          <p class="paragraph paragraph--sm">
+            Lineup announcements, useful info, and all important news to keep
+            you up-to-date!
+          </p>
+
+          <form action="#" method="post" class="form flex--c">
+            <label for="fname"></label>
+            <input
+              type="text"
+              name="firstname"
+              id="fname"
+              placeholder="Your name"
+            />
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+            />
+
+            <input type="submit" value="Sign Up!" class="btn" />
+          </form>
+        </div>
+        <div class="footer__nav flex--c">
+          <ul class="footer__menu flex--c">
+            <li><a href="#">Visions crew</a></li>
+            <li><a href="#">Visions festival policy</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">For sponsors</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+
+          <ul class="footer__socials flex">
+            <li>
+              <a href="https://www.instagram.com" aria-label="instagram logo">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.4969 7.36979C9.38527 7.36979 7.66201 9.0267 7.66201 11.057C7.66201 13.0874 9.38527 14.7443 11.4969 14.7443C13.6085 14.7443 15.3318 13.0874 15.3318 11.057C15.3318 9.0267 13.6085 7.36979 11.4969 7.36979ZM22.9987 11.057C22.9987 9.53013 23.0131 8.01706 22.9239 6.49293C22.8347 4.7226 22.4147 3.15144 21.0683 1.85689C19.7191 0.55958 18.0879 0.158492 16.2467 0.0727421C14.6586 -0.0130079 13.085 0.000822769 11.4998 0.000822769C9.91174 0.000822769 8.33808 -0.0130079 6.75292 0.0727421C4.91171 0.158492 3.27763 0.562347 1.93125 1.85689C0.581988 3.15421 0.164838 4.7226 0.0756548 6.49293C-0.0135288 8.01983 0.000855714 9.5329 0.000855714 11.057C0.000855714 12.5812 -0.0135288 14.097 0.0756548 15.6211C0.164838 17.3915 0.584864 18.9626 1.93125 20.2572C3.28051 21.5545 4.91171 21.9556 6.75292 22.0413C8.34096 22.1271 9.91462 22.1133 11.4998 22.1133C13.0878 22.1133 14.6615 22.1271 16.2467 22.0413C18.0879 21.9556 19.7219 21.5517 21.0683 20.2572C22.4176 18.9599 22.8347 17.3915 22.9239 15.6211C23.016 14.097 22.9987 12.5839 22.9987 11.057ZM11.4969 16.7304C8.23164 16.7304 5.59641 14.1966 5.59641 11.057C5.59641 7.91748 8.23164 5.38371 11.4969 5.38371C14.7622 5.38371 17.3974 7.91748 17.3974 11.057C17.3974 14.1966 14.7622 16.7304 11.4969 16.7304ZM17.6391 6.47633C16.8767 6.47633 16.261 5.88438 16.261 5.15135C16.261 4.41833 16.8767 3.82638 17.6391 3.82638C18.4014 3.82638 19.0171 4.41833 19.0171 5.15135C19.0173 5.32541 18.9818 5.49781 18.9127 5.65866C18.8435 5.81951 18.742 5.96566 18.614 6.08874C18.486 6.21182 18.334 6.30941 18.1667 6.37592C17.9994 6.44243 17.8201 6.47655 17.6391 6.47633Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" aria-label="facebook logo">
+                <svg
+                  width="11"
+                  height="23"
+                  viewBox="0 0 11 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.37634 4.2835V7.3286H0V11.0504H2.37634V22.1141H7.26104V11.0504H10.5379C10.5379 11.0504 10.8468 9.2658 10.9953 7.31312H7.2799V4.77C7.2799 4.38743 7.81269 3.8766 8.34076 3.8766H11V0H7.38127C2.25611 0 2.37634 3.72622 2.37634 4.2835Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" aria-label="youtube logo">
+                <svg
+                  width="30"
+                  height="23"
+                  viewBox="0 0 30 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.769 0H6.231C2.79 0 0 2.90725 0 6.49076V15.6233C0 19.21 2.79 22.1141 6.231 22.1141H23.769C27.21 22.1141 30 19.2068 30 15.6233V6.49076C30 2.90409 27.21 0 23.769 0ZM19.557 11.5026L11.352 15.5791C11.3018 15.6041 11.2464 15.6153 11.191 15.6118C11.1356 15.6082 11.0819 15.59 11.035 15.5588C10.988 15.5276 10.9493 15.4845 10.9224 15.4333C10.8955 15.3822 10.8812 15.3247 10.881 15.2662V6.86048C10.8815 6.80125 10.8964 6.74314 10.9242 6.69166C10.952 6.64017 10.9918 6.59703 11.0399 6.56632C11.088 6.53562 11.1427 6.51836 11.1989 6.5162C11.2551 6.51403 11.3109 6.52703 11.361 6.55396L19.563 10.8832C19.6169 10.9129 19.662 10.9577 19.6933 11.0127C19.7245 11.0677 19.7408 11.1308 19.7401 11.1949C19.7395 11.259 19.7221 11.3216 19.6898 11.3759C19.6574 11.4302 19.6115 11.4741 19.557 11.5026Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" aria-label="twitter logo">
+                <svg
+                  width="26"
+                  height="23"
+                  viewBox="0 0 26 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26 2.61778C25.0432 3.06006 24.0162 3.36413 22.9372 3.49681C24.0396 2.80575 24.882 1.7111 25.2824 0.409137C24.2319 1.06003 23.0857 1.51794 21.892 1.76362C21.3899 1.20406 20.7858 0.759113 20.1166 0.455904C19.4475 0.152694 18.7272 -0.00241741 17.9998 2.84816e-05C15.054 2.84816e-05 12.6672 2.50168 12.6672 5.58382C12.6672 6.02057 12.714 6.44627 12.805 6.85538C10.692 6.7487 8.62321 6.17494 6.73048 5.17069C4.83776 4.16645 3.16271 2.75377 1.8122 1.0228C1.33786 1.87171 1.08813 2.84112 1.0894 3.82852C1.0894 5.7635 2.0332 7.47733 3.4632 8.47523C2.61676 8.44701 1.78844 8.20743 1.0452 7.77587V7.84498C1.05323 9.14269 1.48408 10.3973 2.26438 11.3953C3.04469 12.3932 4.12621 13.0727 5.3248 13.3182C4.53793 13.5394 3.7146 13.5715 2.9146 13.4122C3.26333 14.5286 3.93035 15.5018 4.82306 16.1968C5.71577 16.8918 6.78986 17.274 7.8962 17.2904C5.9981 18.8455 3.66766 19.6856 1.2714 19.6788C0.8424 19.6788 0.4186 19.6511 0 19.6014C2.44523 21.2469 5.2805 22.1184 8.1744 22.1141C17.9868 22.1141 23.3506 13.6057 23.3506 6.22513L23.3324 5.50089C24.3784 4.71938 25.2822 3.74251 26 2.61778Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts flex">
+          <div class="address-box">
+            <p>703 Park Avenue, Sacramento, CA, 95814</p>
+          </div>
+          <div class="phone-box flex--c">
+            <h4 class="heading-quaternary">Phone</h4>
+            <a href="tel:916-528-5744">916-528-5744</a>
+            <a href="tel:916-328-3269">916-328-3269</a>
+          </div>
+          <div class="email-box">
+            <h4 class="heading-quaternary">Email</h4>
+            <a href="mailto:visionsfest@gmail.com">visionsfest@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

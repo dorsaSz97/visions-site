@@ -1,0 +1,47 @@
+.text--dark {
+  color: $color-dark;
+}
+
+.text--light {
+  color: $color-light;
+}
+
+.flex {
+  display: flex;
+
+  &-ac-jc {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-ac {
+    align-items: center;
+  }
+
+  &-jc {
+    justify-content: center;
+  }
+}
+
+.flex--c {
+  display: flex;
+  flex-direction: column;
+
+  &-ac-jc {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-ac {
+    align-items: center;
+  }
+
+  &-jc {
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Electrolize';
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $color-light;
+}
+
+.paragraph {
+  font-family: 'Electrolize';
+  color: inherit;
+
+  &--sm {
+    font-size: 2.2rem;
+    line-height: 1.18;
+  }
+  &--m {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  &--lg {
+    font-size: 2.6rem;
+    line-height: 1.19;
+  }
+
+  &--dark {
+    color: $color-dark;
+  }
+}
+
+.heading-primary {
+  font-family: 'Cindie2-N';
+  font-size: 3.8rem;
+  line-height: 100%;
+  color: $color-dark;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.heading-secondary {
+  font-family: 'Cindie2-N';
+  font-size: 4rem;
+  line-height: 1.3;
+
+  &--dark {
+    color: $color-dark;
+  }
+
+  &--light {
+    color: $color-light;
+  }
+}

@@ -1,0 +1,40 @@
+// FONTS
+@font-face {
+  font-family: 'Cindie2-m';
+  src: url('../fonts/Cindie2-M.ttf');
+}
+@font-face {
+  font-family: 'Cindie2-n';
+  src: url('../fonts/Cindie2-N.ttf');
+}
+@font-face {
+  font-family: 'Cindie2-o';
+  src: url('../fonts/Cindie2-O.ttf');
+}
+@font-face {
+  font-family: 'Cindie2-v';
+  src: url('../fonts/Cindie2-V.ttf');
+}
+@font-face {
+  font-family: 'Electrolize';
+  src: url('../fonts/Electrolize-Regular.ttf');
+}
+
+// COLORS
+$color-light: #e2e2e2;
+$color-dark: #1c2830;
+$color-primary: #004176;
+$color-primary-light-1: #007aaf;
+$color-primary-light-2: #05b2fd;
+$color-primary-light-3: #415d76;
+$color-primary-light-4: #006dbd;
+$color-shadow-1: #05b2fd80;
+$color-shadow-2: #05b2fdbf;
+$color-shadow-3: #1f67f3cc;
+$color-shadow-4: #3b9cfc80;
+$color-grey-1: #c4c4c4;
+$color-grey-2: #bebbbb;
+$color-grey-3: #e7e9eb;
+$color-line: #0e9ffffe;
+
+$transition-def: all 0.5s;

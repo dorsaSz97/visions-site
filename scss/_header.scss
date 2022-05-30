@@ -1,0 +1,63 @@
+.header {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  height: 15rem;
+  padding: 0 7.4rem;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 200000;
+
+  a:link,
+  a:visited {
+    font-family: 'Electrolize';
+    font-size: 2.2rem;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  a:hover {
+    filter: drop-shadow(0px 0px 20px rgba(5, 178, 253, 0.9));
+  }
+  a:active {
+    filter: drop-shadow(0px 0px 20px rgba(5, 178, 253, 0.25));
+    color: $color-primary-light-1;
+  }
+
+  &__logo-box {
+    height: 100%;
+    .caption {
+      font-size: 1.6rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__logo {
+    flex-grow: 1;
+    height: 80%;
+    display: inline-block;
+    object-fit: cover;
+  }
+
+  &__navigation {
+    gap: 4rem;
+    & > * {
+      padding: 0 2rem;
+    }
+  }
+
+  &__menu {
+    gap: 7rem;
+    > li > a:link {
+      padding: 1.2rem;
+    }
+  }
+
+  &__socials {
+    gap: 1.3rem;
+
+    a:hover {
+      filter: drop-shadow(0px 0px 10px rgba(5, 179, 253, 0.46));
+    }
+  }
+}
